@@ -32,3 +32,6 @@ type sysfs_vl53l1, sysfs_type, fs_type;
 
 # brightness
 type sysfs_oem, sysfs_type, fs_type;
+
+# System Info Node
+type sysfs_kgsl, sysfs_type, fs_type;

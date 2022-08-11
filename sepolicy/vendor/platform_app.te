@@ -1,7 +1,7 @@
 allow platform_app sysfs_graphics:file r_file_perms;
 
 # System Info
-r_dir_file(platform_app, sysfs_usb_supply);
-r_dir_file(platform_app, sysfs_battery_supply);
-r_dir_file(platform_app, sysfs_thermal);
-r_dir_file(platform_app, sysfs_kgsl);
+allow platform_app vendor_sysfs_battery_supply:dir search;
+allow platform_app vendor_sysfs_battery_supply:file { getattr open read };
+allow platform_app vendor_sysfs_kgsl:dir search;
+allow platform_app vendor_sysfs_kgsl:file { getattr open read };
